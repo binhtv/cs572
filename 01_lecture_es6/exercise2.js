@@ -4,7 +4,7 @@
 function isWeekend() {
 	const todayDate = new Date();
 	const day = todayDate.getDay(); // 0 - 6 (0 is Sunday)
-	const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+	const dayNames = ['weekend', 'weekday', 'weekday', 'weekday', 'weekday', 'weekday', 'weekend'];
 	return dayNames[day];
 }
 
