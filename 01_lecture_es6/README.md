@@ -18,4 +18,4 @@
 
   	• Observables
 # Exercise 2
-	Complete the code for isWeekend function and return the string "weekend" or"weekday" without using if-statement/ternary
+Complete the code for isWeekend function and return the string "weekend" or"weekday" without using if-statement/ternary
