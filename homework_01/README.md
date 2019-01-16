@@ -19,3 +19,19 @@
   	• Observables
 # Exercise 2
 Complete the code for isWeekend function and return the string "weekend" or"weekday" without using if-statement/ternary
+# Exercise 3
+We want to create a curryable function that takes as arguments (in this order):
+
+    • An item object
+    
+    • Discount between 0 and 100 (a 100$ item with a 10% discount will cost 90$)
+and returns the item with the correct price. Implement **applyCoupon()** as acurriable function.
+
+    const item = {
+            "name": "Biscuits",
+            "type": "regular",
+            "category": "food",
+            "price": 200
+        }
+        
+    applyCoupon(item)(10).price === 180
