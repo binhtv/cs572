@@ -6,7 +6,7 @@
 	
 	* `setTimeout()` schedules a script to be run after a minimum threshold in ms has elapsed.
 
-	On main module, the order in which the timers are executed is non-deterministic on main module while  within an I/O cycle, the immediate callback is always executed first. **So sometime you want to execute some callbacks before any timers within an I/O cycle just use `setImmediate()`**
+	On main module, the order in which the timers are executed is non-deterministic on main module while  within an I/O cycle, the immediate callback is always executed first. **So sometime you want to execute some callbacks before any timers within an I/O cycle, just use `setImmediate()`**
 
 2. Difference between `process.nextTick()` and `setImmediate()`
    
