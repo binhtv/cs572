@@ -1,5 +1,5 @@
 # Exercise 1
-  Define a filterWords function on the String object. 
+  Define a **filterWords** function on the String object. 
   The function accepts anarray of strings that specifies a list of banned words. 
 
   The function returns thestring after replacing all the banned words with stars.
@@ -25,7 +25,7 @@ We want to create a curryable function that takes as arguments (in this order):
     • An item object
     
     • Discount between 0 and 100 (a 100$ item with a 10% discount will cost 90$)
-and returns the item with the correct price. Implement **applyCoupon()** as acurriable function.
+and returns the item with the correct price. Implement **applyCoupon()** as a curriable function.
 
     const item = {
             "name": "Biscuits",
