@@ -8,5 +8,8 @@
   },
   "keywords": [],
   "author": "Binh Tran <binh12121989@gmail.com> (https://binhtran1989.wordpress.com/)",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "rxjs": "^6.3.3"
+  }
 }
