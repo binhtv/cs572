@@ -10,9 +10,9 @@ server.on('request', (req, res) => {
 
 	const bigFilePath = path.join('/Users/binhtran/Downloads', 'VMware-Fusion-11.0.2-10952296.dmg');
 	//Read file synchronously
-	// const content = fs.readFileSync(bigFilePath, 'utf8');
-	// res.write(content);
-	// res.write('Read file completed')
+	const content = fs.readFileSync(bigFilePath, 'utf8');
+	res.write(content);
+	res.write('Read file completed')
 
 	//Read file asynchronously
 	// fs.readFile(bigFilePath, 'utf8', (err, data) => {
@@ -20,10 +20,10 @@ server.on('request', (req, res) => {
 	// });
 
 	//Read file as stream
-	const readable = fs.createReadStream(bigFilePath, { encoding: 'utf8', highWaterMark: 16 * 1024 * 1024 });
-	readable.on('data', function(chunk) {
-		console.log(chunk.length);
-	});
+	// const readable = fs.createReadStream(bigFilePath, { encoding: 'utf8', highWaterMark: 16 * 1024 * 1024 });
+	// readable.on('data', function(chunk) {
+	// 	console.log(chunk.length);
+	// });
 
 	res.write('Playing with fs');
 	res.end();
