@@ -1,0 +1,16 @@
+{
+  "name": "homework_05",
+  "version": "1.0.0",
+  "description": "Create an Express application that will accept a GET request to route/users and send a response with users json data.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Binh Tran <binh12121989@gmail.com> (https://binhtran1989.wordpress.com/)",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.4"
+  }
+}
