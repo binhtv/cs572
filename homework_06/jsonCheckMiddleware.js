@@ -9,7 +9,7 @@ function getPostRequest(req) {
 				body = JSON.parse(body);
 				resolve(body);
 			} catch(err) {
-				resolve(false);
+				reject('Not a valid json');
 			}
 		});
 	});

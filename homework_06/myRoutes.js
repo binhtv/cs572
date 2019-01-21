@@ -41,9 +41,7 @@ router.route('/grades/:id').get(function (req, resp) {
 //New grade
 router.route('/grades').post(function (req, resp) {
 	const grade = req.body;
-	console.log('-----');
-	console.log(grade);
-	if (!grade) {
+	if (!grade || !grade.name) {
 		resp.status(200).json({
 			code: 0
 		});
