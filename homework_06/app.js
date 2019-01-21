@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
 const fs = require('fs');
+const jsonCheck = require('./jsonCheckMiddleware');
 
 const app = express();
 const accessLog = fs.createWriteStream('./access.log', { flags: 'a' });
@@ -13,26 +14,9 @@ app.use(cors({
 	allowedHeaders: ['Content-Type', 'Authorization']
 }));
 app.use(morgan('combined', { stream: accessLog } ));
-app.use(function(req, resp, next) {
-	if(req.headers['content-type'] === 'application/json' && req.method === 'POST') {
-		let body = '';
-		req.on('data', function(data) {
-			body += data;
-		});
-		req.on('end', () => {
-			try {
-				body = JSON.parse(body);
-				console.log(body);
-				return next();
-			} catch(err) {
-				console.log(err);
-				resp.status(400).end();
-			}
-		});
-	} else {
-		return next();
-	}
-});
+// app.use((req, resp, next) => {
+// 	jsonCheck(req, resp, next);
+// });
 app.use(express.json());
 app.use(express.urlencoded({
 	extended: true
