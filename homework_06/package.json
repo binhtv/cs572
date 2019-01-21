@@ -1,0 +1,20 @@
+{
+  "name": "homework_06",
+  "version": "1.0.0",
+  "description": "Create an Express application that implements a Rest API for an entitycalled **grades**:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Binh Tran <binh12121989@gmail.com> (https://binhtran1989.wordpress.com/)",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1"
+  },
+  "nodemonConfig": {
+    "ignore": ["grades.json", "access.log"]
+  }
+}
