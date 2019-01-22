@@ -11,24 +11,41 @@ const {
 } = process.env;
 const client = new MongoClient(`mongodb://${user}:${password}@${hostname}/${database}`, { useNewUrlParser: true });
 
-client.connect(err => {
-	if (err !== null) {
-		console.log(err);
-		return;
-	}
+const state = {
+	db: null
+}
 
-	console.log('Connected successfully to server');
+exports.connect = (callback) => {
+	if(state.db !== null) {
+		console.log('Reusing db connection');
+		return callback(true);
+	} else {
+		client.connect(err => {
+			if (err !== null) {
+				console.log(err);
+				return callback(false);
+			}
+
+			state.db = client.db(database);
+			return callback(true);
+		});
+	}
+}
+
+exports.close = () => {
+	state.db = null;
+	client.close();
+}
+
+exports.getDecryptedMessage = (callback) => {
 	const algorithm = 'aes256'
 	const pass = 'asaadsaad';
-	const db = client.db(database);
-	const collection = db.collection('homework7');
+	const collection = state.db.collection('homework7');
 	const message = collection.findOne({}, {_id: 0});
 
 	message.then(data => {
 		const decipher = crypto.createDecipher(algorithm, pass);
 		const decrypted = decipher.update(data.message, 'hex', 'utf8') + decipher.final('utf8');
-		console.log(decrypted);
-	}).catch(err => console.log(err));
-
-	client.close();
-});
+		callback(null, decrypted);
+	}).catch(err => callback(err, null));
+}
