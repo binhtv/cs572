@@ -1,0 +1,16 @@
+{
+  "name": "homework_07",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Binh Tran <binh12121989@gmail.com> (https://binhtran1989.wordpress.com/)",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "mongodb": "^3.1.12"
+  }
+}
