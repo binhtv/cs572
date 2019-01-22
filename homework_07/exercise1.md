@@ -1,17 +1,19 @@
 ## Book document
+In this document, we store `tags` for searching by tags and `borrow` to keep track how is borrowing this book and the due date. With this `borrow` data, libarian can know who is the borrower and the due date.
+
 	[
 	{
 		"_id": 1,
 		"isbn": "BOOK1",
 		"author": "Mike",
 		"tags": [
-		"science",
-		"information",
-		"technology"
+			"science",
+			"information",
+			"technology"
 		],
 		"borrow": {
-		"user": "binh",
-		"due_date": "Jan 29 2019"
+			"user": "binh",
+			"due_date": "Jan 29 2019"
 		}
 	},
 	{
@@ -19,13 +21,13 @@
 		"isbn": "BOOK1",
 		"author": "Mike",
 		"tags": [
-		"science",
-		"information",
-		"technology"
+			"science",
+			"information",
+			"technology"
 		],
 		"borrow": {
-		"user": "binh",
-		"due_date": "Jan 10 2019"
+			"user": "binh",
+			"due_date": "Jan 10 2019"
 		}
 	},
 	{
@@ -33,13 +35,13 @@
 		"isbn": "BOOK2",
 		"author": "Robert",
 		"tags": [
-		"big data",
-		"hadoop",
-		"nosql"
+			"big data",
+			"hadoop",
+			"nosql"
 		],
 		"borrow": {
-		"user": "kien",
-		"due_date": "Jan 31 2019"
+			"user": "kien",
+			"due_date": "Jan 31 2019"
 		}
 	},
 	{
@@ -47,14 +49,16 @@
 		"isbn": "BOOK2",
 		"author": "Robert",
 		"tags": [
-		"big data",
-		"hadoop",
-		"nosql"
+			"big data",
+			"hadoop",
+			"nosql"
 		],
 		"borrow": null
 	}
 	]
 ## Student document
+User information document
+
 	[
 	{
 		"_id": 1,
