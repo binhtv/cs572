@@ -1,5 +1,7 @@
 ## Book document
-In this document, we store `tags` for searching by tags and `borrow` to keep track how is borrowing this book and the due date. With this `borrow` data, libarian can know who is the borrower and the due date.
+In this document, we store `tags` for searching by tags and `borrow` to keep track how is borrowing this book and the due date. With this `borrow` data, librarian can know who is the borrower and the due date.
+
+`borrow` can be _null_, indicate that the book is available
 
 	[
 	{
