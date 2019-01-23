@@ -59,4 +59,5 @@ Revisit Homework 07 and write down your suggestions to tune your Library applica
 4. Write another Restful API that will **Find** the nearest 3 points to MUM location (lat: 41.017654, long: -91.9665342), your search criteria mustinclude a category and an optional location name.
 
 _Note that Google Maps will give you coordination as [Lat, Long]. While MongoDB requires coordination to be saved as [Long, Lat]_
+
 _You can either insert your sample data or use [exercise3.json](https://github.com/binhtv/cs572/blob/master/homework_08/exercise3.json)_ then using `mongoimport`
