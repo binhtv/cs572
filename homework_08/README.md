@@ -1,6 +1,10 @@
 # Exercise 1
 
-Given the following document structure
+Download `restaurants.json` and import into your mongodb by using mongoimport
+
+	mongoimport -h [your.hos.name:port] --db [your.db] --collection [your.collection] -u [username] --file [path.to.restaurants.json]
+
+The documment has the structure as bellow: 
 
 	{
 		"_id" : ObjectId("5c4776940960f89463a409ee"),
