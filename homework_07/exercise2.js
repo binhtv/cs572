@@ -41,9 +41,10 @@ exports.getDecryptedMessage = (callback) => {
 	const algorithm = 'aes256'
 	const pass = 'asaadsaad';
 	const collection = state.db.collection('homework7');
-	const message = collection.findOne({}, {_id: 0});
+	const message = collection.findOne({}, {projection: {_id: 0}});
 
 	message.then(data => {
+		console.log(data);
 		const decipher = crypto.createDecipher(algorithm, pass);
 		const decrypted = decipher.update(data.message, 'hex', 'utf8') + decipher.final('utf8');
 		callback(null, decrypted);
