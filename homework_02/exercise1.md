@@ -22,7 +22,7 @@
    3. `dns` to do DNS lookups and name resolution functions
    4. `fs` to handle the file system
    5. `http`(`https`) to make Node.js act as an HTTP\/HTTPS server
-   6. `os` provides information baout the operation system
+   6. `os` provides information about the operation system
    7. `querystring` to handle URL query strings
    8. `stream` to handle streaming data
    9. `util` to access utility functions
