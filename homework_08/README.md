@@ -56,7 +56,7 @@ Revisit Homework 07 and write down your suggestions to tune your Library applica
    		{ name, category, location: [longitude, latitude]
 2. Look for some locations around MUM campus using Google Maps and use Postman to insert them into your MongoDB collection.
 3. Add the necessary indexes to search by location.
-4. Write another Restful API that will **Find** the nearest 3 points to MUM location (lat: 41.017654, long: -91.9665342), your search criteria mustinclude a category and an optional location name.
+4. Write another Restful API that will **Find** the nearest 3 points to MUM location (lat: 41.017654, long: -91.9665342), your search criteria must include a category and an optional location name.
 
 _Note that Google Maps will give you coordination as [Lat, Long]. While MongoDB requires coordination to be saved as [Long, Lat]_
 
