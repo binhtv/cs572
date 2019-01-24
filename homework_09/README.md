@@ -18,5 +18,5 @@ Document structure
 **Use the Aggregation Framework to**:
 1. Find all the zip codes in Iowa state.
 2. Find all the zip codes with a population more than 1000.
-3. Find all cities that have more than one zip code, sort the results based bystate and city name.
+3. Find all cities that have more than one zip code, sort the results based by state and city name.
 4. Display the least populated city in each state
