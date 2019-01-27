@@ -17,8 +17,8 @@ async function getUsers(req, resp) {
 		const fullUrl = req.protocol + '://' + req.get('host') + req.originalUrl;
 		const pages = [`<${fullUrl}?page=1>;rel="first"`, 
 						`<${fullUrl}?page=1>;rel="prev"`,
-						`<${fullUrl}?page=1>;rel="next"`,
-						`<${fullUrl}?page=1>;rel="last"`];
+						`<${fullUrl}?page=2>;rel="next"`,
+						`<${fullUrl}?page=10>;rel="last"`];
 		resp.set('Link', pages.join(','));
 
 		resp.send(users.data);

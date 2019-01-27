@@ -1,6 +1,6 @@
-{"_id":{"$oid":"5c48e811918436e468b49e9a"},"name":"Imperial Buffet","category":"Restaurant","location":[-91.969476,41.006487]}
-{"_id":{"$oid":"5c48e857918436e468b49e9b"},"name":"Evergreen Cemetery","category":"Park","location":[-91.95697,41.014853]}
-{"_id":{"$oid":"5c48e875918436e468b49e9c"},"name":"Fairfield Golf \u0026 Country Club","category":"Park","location":[-91.951705,40.999235]}
-{"_id":{"$oid":"5c48ecf1b6334aec70332da8"},"name":"Central Park","category":"Park","location":[-91.963194,41.00715]}
-{"_id":{"$oid":"5c48ed5bb6334aec70332da9"},"name":"Jefferson County-Conservation","category":"Park","location":[-91.986596,40.991835]}
-{"_id":{"$oid":"5c48ee12b6334aec70332daa"},"name":"Bonnifield Lake","category":"Park","location":[-91.955114,41.019268]}
+[{"_id":{"$oid":"5c48e811918436e468b49e9a"},"name":"Imperial Buffet","category":"Restaurant","location":[-91.969476,41.006487]},
+{"_id":{"$oid":"5c48e857918436e468b49e9b"},"name":"Evergreen Cemetery","category":"Park","location":[-91.95697,41.014853]},
+{"_id":{"$oid":"5c48e875918436e468b49e9c"},"name":"Fairfield Golf \u0026 Country Club","category":"Park","location":[-91.951705,40.999235]},
+{"_id":{"$oid":"5c48ecf1b6334aec70332da8"},"name":"Central Park","category":"Park","location":[-91.963194,41.00715]},
+{"_id":{"$oid":"5c48ed5bb6334aec70332da9"},"name":"Jefferson County-Conservation","category":"Park","location":[-91.986596,40.991835]},
+{"_id":{"$oid":"5c48ee12b6334aec70332daa"},"name":"Bonnifield Lake","category":"Park","location":[-91.955114,41.019268]}]
