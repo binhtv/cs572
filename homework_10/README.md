@@ -1,6 +1,6 @@
 # Exercise
 
-Re-write the following code using TypeScript. Try to be as explicit as possible and add Types toeverything you can. When you are done, transpile the TS code to JS code
+Re-write the following code using TypeScript. Try to be as explicit as possible and add Types to everything you can. When you are done, transpile the TS code to JS code
 
 	function University(name, dept) {
 		this.name = name;
