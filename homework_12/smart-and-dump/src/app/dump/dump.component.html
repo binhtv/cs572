@@ -1,0 +1,11 @@
+<ul *ngIf="data && data.length > 0;else nothing">
+  <li *ngFor="let item of data" [ngClass]="['list']">
+    <span>Name: {{item.name}}</span>
+    <span [ngClass]="{age: true, old: item.age >= 30}">Age: {{item.age}}</span>
+  </li>
+</ul>
+<ng-template #nothing>
+  <div ngClass="no-thing">Nothing to be printed</div>
+</ng-template>
+<div [appIsVisible]="false">By @BinhTran</div>
+<div name='Double Click' appLoggable>Double click on me to see the console log</div>

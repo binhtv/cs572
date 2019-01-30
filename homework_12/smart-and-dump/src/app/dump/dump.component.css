@@ -1,0 +1,16 @@
+.list {
+	list-style-type: none;
+}
+.list span {
+	display: block;
+	font-size: x-large;
+}
+.list span.age {
+	color: green;
+}
+.list span.age.old {
+	color: red;
+}
+.no-thing {
+	font-style: italic;
+}
