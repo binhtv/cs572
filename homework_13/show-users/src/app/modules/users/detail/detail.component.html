@@ -1,0 +1,8 @@
+<div *ngIf="userData !== null" ngClass="user-detail">
+  <div>
+    <img src="{{userData.picture.large}}"/>
+  </div>
+  <div>First name: {{userData.name.first}}</div>
+  <div>Last name: {{userData.name.last}}</div>
+  <div>Email: {{userData.email}}</div>
+</div>

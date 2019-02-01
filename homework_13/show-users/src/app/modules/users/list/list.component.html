@@ -1,0 +1,6 @@
+<ul ngClass="user-list">
+	<li *ngFor="let user of userList ">
+		<a [routerLink]="['/users', user.login.uuid]">{{user.name.last}}</a>
+	</li>
+</ul>
+<router-outlet></router-outlet>
