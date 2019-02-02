@@ -11,6 +11,6 @@ Create users component and `userdetails` component that show a list of all u
 		
 When users click on a link you should display `userdetails` child component that shows full details about the user.
 
-If a user tried to visit `users/:uuid` page without passing a correct id, then your app must redirectthem to a friendly error page. (_use Guards_).
+If a user tried to visit `users/:uuid` page without passing a correct id, then your app must redirect them to a friendly error page. (_use Guards_).
 
 **Write this exercise with Lazy Loading in mind**

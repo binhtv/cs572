@@ -12,4 +12,4 @@ Deep understanding of how Angular (backed by Google) works, Change Detection, Re
 
 ![NodeJs!](https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png "NodeJs")
 ![MongoDB!](https://webassets.mongodb.com/_com_assets/cms/mongodb-logo-rgb-j6w271g1xn.jpg "MongoDB")
-![Angular!](https://www.vectorlogo.zone/logos/angular/angular-card.png "Angular")
+![Angular!](https://user-images.githubusercontent.com/7671024/52155533-f0be1280-2648-11e9-9005-5d6c8e4a5cc7.png "Angular")
