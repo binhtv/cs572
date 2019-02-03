@@ -1,0 +1,51 @@
+<div class="col-md-3">
+  <h1>Please login</h1>
+  <p class="text-muted">Please fill in this form to create an account</p>
+  <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+    <div formGroupName="signupInfo">
+      <div class="form-group">
+        <input type="text" class="form-control" id="firstName" formControlName="firstName" placeholder="First Name">
+        <div *ngIf="firstName.invalid && (firstName.dirty || firstName.touched)" class="error">
+          FirstName is required!
+        </div>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="lastName" formControlName="lastName" placeholder="Last Name">
+        <div *ngIf="lastName.invalid && (lastName.dirty || lastName.touched)" class="error">
+          LastName is required!
+        </div>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="email" formControlName="email" placeholder="Email">
+        <div *ngIf="email.invalid && (email.dirty || email.touched)" class="error">
+          <div *ngIf="email.errors.required">Email is require!</div>
+          <div *ngIf="email.errors.pattern">Email is not well formed!</div>
+        </div>
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" id="password" formControlName="password" placeholder="Password">
+        <div *ngIf="password.invalid && (password.dirty || password.touched)" class="error">
+          Password is require!
+        </div>
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" id="confirmPassword" formControlName="confirmPassword" placeholder="Confirm Password">
+        <div *ngIf="confirmPassword.invalid && (confirmPassword.dirty || confirmPassword.touched)" class="error">
+          confirmPassword is require!
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="agree" formControlName="agree">
+        <label class="form-check-label" for="agree">
+          I accept the Terms of Use & Private Privacy
+        </label>
+        <div *ngIf="agree.invalid && (agree.dirty || agree.touched)" class="error">
+          <div *ngIf="agree.errors.mustCheckAgree">You have to confirm accept to continue.</div>
+        </div>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary col-md-12" [disabled]="!signupForm.valid">Login</button>
+  </form>
+</div>
